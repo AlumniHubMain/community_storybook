@@ -1,6 +1,12 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import { List, ListItem, ListItemText, ListItemIcon, ListProps as MUIListProps } from '@mui/material';
+import {
+  List,
+  ListItem,
+  ListItemText,
+  ListItemIcon,
+  ListProps as MUIListProps,
+} from '@mui/material';
 import { Inbox as InboxIcon, Mail as MailIcon } from '@mui/icons-material';
 
 export interface ListProps extends MUIListProps {

@@ -1,6 +1,10 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import { Checkbox as MUICheckbox, CheckboxProps as MUICheckboxProps, FormControlLabel } from '@mui/material';
+import {
+  Checkbox as MUICheckbox,
+  CheckboxProps as MUICheckboxProps,
+  FormControlLabel,
+} from '@mui/material';
 
 export interface CheckboxProps extends MUICheckboxProps {
   label?: string;
@@ -27,12 +31,7 @@ export default {
 
 const Template = (args: any) => {
   const { label, ...checkboxProps } = args;
-  return (
-    <FormControlLabel
-      control={<MUICheckbox {...checkboxProps} />}
-      label={label || ''}
-    />
-  );
+  return <FormControlLabel control={<MUICheckbox {...checkboxProps} />} label={label || ''} />;
 };
 export const Default: StoryFn<CheckboxProps> = Template.bind({});
 Default.args = {

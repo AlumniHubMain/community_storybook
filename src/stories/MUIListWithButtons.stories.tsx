@@ -1,6 +1,12 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import { List, ListItemButton, ListItemText, ListProps as MUIListProps, ListItemButtonProps as MUIListItemButtonProps } from '@mui/material';
+import {
+  List,
+  ListItemButton,
+  ListItemText,
+  ListProps as MUIListProps,
+  ListItemButtonProps as MUIListItemButtonProps,
+} from '@mui/material';
 
 export interface ListProps extends MUIListProps {
   items: { primary: string; secondary?: string; onClick?: () => void }[];
@@ -48,9 +54,21 @@ const Template = (args: any) => {
 export const Default: StoryFn<ListProps> = Template.bind({});
 Default.args = {
   items: [
-    { primary: 'Button Item 1', secondary: 'Details for item 1', onClick: () => alert('Clicked Item 1') },
-    { primary: 'Button Item 2', secondary: 'Details for item 2', onClick: () => alert('Clicked Item 2') },
-    { primary: 'Button Item 3', secondary: 'Details for item 3', onClick: () => alert('Clicked Item 3') },
+    {
+      primary: 'Button Item 1',
+      secondary: 'Details for item 1',
+      onClick: () => alert('Clicked Item 1'),
+    },
+    {
+      primary: 'Button Item 2',
+      secondary: 'Details for item 2',
+      onClick: () => alert('Clicked Item 2'),
+    },
+    {
+      primary: 'Button Item 3',
+      secondary: 'Details for item 3',
+      onClick: () => alert('Clicked Item 3'),
+    },
   ],
   dense: false,
   disablePadding: false,
@@ -58,9 +76,21 @@ Default.args = {
 export const DenseList: StoryFn<ListProps> = Template.bind({});
 DenseList.args = {
   items: [
-    { primary: 'Button Item 1', secondary: 'Details for item 1', onClick: () => alert('Clicked Item 1') },
-    { primary: 'Button Item 2', secondary: 'Details for item 2', onClick: () => alert('Clicked Item 2') },
-    { primary: 'Button Item 3', secondary: 'Details for item 3', onClick: () => alert('Clicked Item 3') },
+    {
+      primary: 'Button Item 1',
+      secondary: 'Details for item 1',
+      onClick: () => alert('Clicked Item 1'),
+    },
+    {
+      primary: 'Button Item 2',
+      secondary: 'Details for item 2',
+      onClick: () => alert('Clicked Item 2'),
+    },
+    {
+      primary: 'Button Item 3',
+      secondary: 'Details for item 3',
+      onClick: () => alert('Clicked Item 3'),
+    },
   ],
   dense: true,
   disablePadding: false,
@@ -68,9 +98,21 @@ DenseList.args = {
 export const NoPaddingList: StoryFn<ListProps> = Template.bind({});
 NoPaddingList.args = {
   items: [
-    { primary: 'Button Item 1', secondary: 'Details for item 1', onClick: () => alert('Clicked Item 1') },
-    { primary: 'Button Item 2', secondary: 'Details for item 2', onClick: () => alert('Clicked Item 2') },
-    { primary: 'Button Item 3', secondary: 'Details for item 3', onClick: () => alert('Clicked Item 3') },
+    {
+      primary: 'Button Item 1',
+      secondary: 'Details for item 1',
+      onClick: () => alert('Clicked Item 1'),
+    },
+    {
+      primary: 'Button Item 2',
+      secondary: 'Details for item 2',
+      onClick: () => alert('Clicked Item 2'),
+    },
+    {
+      primary: 'Button Item 3',
+      secondary: 'Details for item 3',
+      onClick: () => alert('Clicked Item 3'),
+    },
   ],
   dense: false,
   disablePadding: true,

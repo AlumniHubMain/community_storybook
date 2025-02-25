@@ -17,7 +17,19 @@ export default {
     variant: {
       control: 'select',
       options: [
-        'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'subtitle1', 'subtitle2', 'body1', 'body2', 'caption', 'button', 'overline'
+        'h1',
+        'h2',
+        'h3',
+        'h4',
+        'h5',
+        'h6',
+        'subtitle1',
+        'subtitle2',
+        'body1',
+        'body2',
+        'caption',
+        'button',
+        'overline',
       ],
       description: 'The typography variant to use',
     },
@@ -28,7 +40,15 @@ export default {
     },
     color: {
       control: 'select',
-      options: ['initial', 'inherit', 'primary', 'secondary', 'textPrimary', 'textSecondary', 'error'],
+      options: [
+        'initial',
+        'inherit',
+        'primary',
+        'secondary',
+        'textPrimary',
+        'textSecondary',
+        'error',
+      ],
       description: 'Set the color of the typography',
     },
     gutterBottom: {

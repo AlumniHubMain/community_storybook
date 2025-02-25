@@ -37,13 +37,7 @@ export default {
 const Template = (args: any) => {
   const { checked, disabled, color, size, onChange } = args;
   return (
-    <MUIRadio
-      checked={checked}
-      disabled={disabled}
-      color={color}
-      size={size}
-      onChange={onChange}
-    />
+    <MUIRadio checked={checked} disabled={disabled} color={color} size={size} onChange={onChange} />
   );
 };
 export const Default: StoryFn<typeof MUIRadio> = Template.bind({});

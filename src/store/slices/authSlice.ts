@@ -25,20 +25,17 @@ export const login = createAsyncThunk(
     } catch (error: any) {
       return thunkAPI.rejectWithValue(error.message);
     }
-  },
+  }
 );
 
-export const checkAuth = createAsyncThunk(
-  'auth/checkAuth',
-  async (_, thunkAPI) => {
-    try {
-      const user = await checkAuthAPI();
-      return user;
-    } catch (error: any) {
-      return thunkAPI.rejectWithValue(error.message);
-    }
-  },
-);
+export const checkAuth = createAsyncThunk('auth/checkAuth', async (_, thunkAPI) => {
+  try {
+    const user = await checkAuthAPI();
+    return user;
+  } catch (error: any) {
+    return thunkAPI.rejectWithValue(error.message);
+  }
+});
 
 const authSlice = createSlice({
   name: 'auth',

@@ -1,7 +1,7 @@
 {
   "name": "@alumni/uikit",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,7 +10,9 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "start": "npm run storybook"
+    "start": "npm run storybook",
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx}\""
   },
   "dependencies": {
     "@tamagui/config": "^1.125.16",
@@ -42,10 +44,13 @@
     "@types/redux-logger": "^3.0.13",
     "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.18",
     "eslint-plugin-storybook": "^0.11.2",
     "globals": "^15.14.0",
+    "prettier": "^3.5.2",
     "react-docgen": "^7.1.1",
     "react-native-web": "^0.19.13",
     "react-redux": "^9.1.2",

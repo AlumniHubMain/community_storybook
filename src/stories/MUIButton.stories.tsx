@@ -13,24 +13,28 @@ export default {
   argTypes: {
     variant: {
       control: 'select',
-      options: ['contained', 'text', 'outlined',]
+      options: ['contained', 'text', 'outlined'],
     },
     color: {
       control: 'select',
-      options: ['primary', 'secondary', 'success', 'error', 'info', 'warning']
+      options: ['primary', 'secondary', 'success', 'error', 'info', 'warning'],
     },
     size: {
       control: 'select',
-      options: ['small', 'medium', 'large']
+      options: ['small', 'medium', 'large'],
     },
     children: { control: 'text' },
-    onClick: { action: 'clicked' }
-  }
+    onClick: { action: 'clicked' },
+  },
 } as Meta<typeof MUIButton>;
 
 const Template: StoryFn<typeof MUIButton> = (args) => {
   const { children, variant, color, size } = args;
-  return <MUIButton variant={variant} color={color} size={size}>{children}</MUIButton>;
+  return (
+    <MUIButton variant={variant} color={color} size={size}>
+      {children}
+    </MUIButton>
+  );
 };
 
 export const Default = Template.bind({});
@@ -38,7 +42,7 @@ Default.args = {
   variant: 'contained',
   color: 'primary',
   size: 'medium',
-  children: 'Click Me'
+  children: 'Click Me',
 };
 
 export const TextButton = Template.bind({});
@@ -46,7 +50,7 @@ TextButton.args = {
   variant: 'text',
   color: 'secondary',
   size: 'medium',
-  children: 'Text Button'
+  children: 'Text Button',
 };
 
 export const OutlinedButton = Template.bind({});
@@ -54,5 +58,5 @@ OutlinedButton.args = {
   variant: 'outlined',
   color: 'success',
   size: 'large',
-  children: 'Outlined Button'
+  children: 'Outlined Button',
 };

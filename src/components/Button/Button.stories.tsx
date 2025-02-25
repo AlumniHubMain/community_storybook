@@ -1,32 +1,32 @@
-import React from 'react'
-import { Button } from './Button'
+import React from 'react';
+import { Button } from './Button';
 
 export default {
-    title: 'UI/Button',
-    component: Button,
-    args: {
-        label: 'Click Me',
-    },
-} as const
+  title: 'UI/Button',
+  component: Button,
+  args: {
+    label: 'Click Me',
+  },
+} as const;
 
-const Template = (args: any) => <Button {...args} />
+const Template = (args: any) => <Button {...args} />;
 
-export const Default = Template.bind({})
+export const Default = Template.bind({});
 Default.args = {
-    label: 'Default Button',
-}
+  label: 'Default Button',
+};
 
-export const CustomLabel = Template.bind({})
+export const CustomLabel = Template.bind({});
 CustomLabel.args = {
-    label: 'Custom Label',
-}
+  label: 'Custom Label',
+};
 
-export const ClickedButton = Template.bind({})
+export const ClickedButton = Template.bind({});
 ClickedButton.args = {
-    label: 'Clicked Button',
-}
+  label: 'Clicked Button',
+};
 ClickedButton.play = async ({ canvasElement }) => {
-    const canvas = within(canvasElement)
-    const button = await canvas.getByText('Clicked Button')
-    userEvent.click(button)
-}
+  const canvas = within(canvasElement);
+  const button = await canvas.getByText('Clicked Button');
+  userEvent.click(button);
+};

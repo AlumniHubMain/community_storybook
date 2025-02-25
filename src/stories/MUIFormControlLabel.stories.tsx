@@ -1,6 +1,10 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import { FormControlLabel, Checkbox, FormControlLabelProps as MUIFormControlLabelProps } from '@mui/material';
+import {
+  FormControlLabel,
+  Checkbox,
+  FormControlLabelProps as MUIFormControlLabelProps,
+} from '@mui/material';
 
 export interface FormControlLabelProps extends MUIFormControlLabelProps {
   label: string;
