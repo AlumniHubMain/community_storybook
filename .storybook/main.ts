@@ -12,5 +12,9 @@ const config: StorybookConfig = {
     name: "@storybook/react-vite",
     options: {},
   },
+  env: (config) => ({
+    ...config,
+    TAMAGUI_TARGET: "web",
+  }),
 };
 export default config;

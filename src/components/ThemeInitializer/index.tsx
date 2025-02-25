@@ -7,23 +7,9 @@ import {
   setTheme,
 } from "../../store/slices/themeSlice";
 import { TamaguiProvider, createTamagui, Theme } from 'tamagui'
-import { config } from '@tamagui/config'
+import config from '../../../tamagui.config.ts'
 
 const tamaguiConfig = createTamagui(config)
-
-const lightTheme = {
-  primary: '#5A84DB',
-  secondary: '#122043',
-  background: '#FFFFFF',
-  paperSecondary: '#F1F2F3'
-}
-
-const darkTheme = {
-  primary: '#5A84DB',
-  secondary: '#122043',
-  background: '#121212',
-  paperSecondary: '#F1F2F3'
-}
 
 const ThemeInitializer: React.FC<PropsWithChildren> = ({ children }) => {
   const currentTheme = useSelector(currentThemeSelector);
