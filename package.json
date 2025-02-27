@@ -64,5 +64,11 @@
       "plugin:storybook/recommended"
     ]
   },
-  "packageManager": "yarn@4.6.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlumniHubMain/community_storybook.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
