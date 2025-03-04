@@ -21,6 +21,7 @@
     "@tamagui/next-theme": "^1.125.22",
     "@tamagui/toast": "^1.125.22",
     "expo-constants": "^17.0.7",
+    "expo-modules-core": "^2.2.2",
     "process": "^0.11.10",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -74,5 +75,6 @@
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
-  }
+  },
+  "packageManager": "yarn@1.22.22"
 }
