@@ -18,6 +18,9 @@
   "dependencies": {
     "@tamagui/config": "^1.125.16",
     "@tamagui/core": "^1.125.16",
+    "@tamagui/next-theme": "^1.125.22",
+    "@tamagui/toast": "^1.125.22",
+    "expo-constants": "^17.0.7",
     "process": "^0.11.10",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
