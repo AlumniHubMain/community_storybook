@@ -1,4 +1,5 @@
 import type { Preview } from "@storybook/react";
+import ThemeProviderDecorator from "./decorators/ThemeProviderDecorator";
 
 const preview: Preview = {
   parameters: {
@@ -10,6 +11,7 @@ const preview: Preview = {
     },
   },
   tags: ['autodocs'],
+  decorators: [ThemeProviderDecorator]
 };
 
 export default preview;
