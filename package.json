@@ -1,5 +1,5 @@
 {
-  "name": "@alumni/uikit",
+  "name": "@alumnihubmain/uikit",
   "version": "1.0.0",
   "type": "module",
   "main": "src/index.ts",
@@ -77,7 +77,7 @@
     "url": "https://github.com/AlumniHubMain/community_storybook.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "@alumnihubmain:registry": "https://npm.pkg.github.com"
   },
   "packageManager": "yarn@1.22.22"
 }
