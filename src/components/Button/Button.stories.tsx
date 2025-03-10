@@ -1,32 +1,16 @@
-import React from 'react';
-import { Button } from './Button';
+import type { Meta, StoryObj } from "@storybook/react";
+import { Button } from "./Button";
 
-export default {
-  title: 'UI/Button',
+const meta: Meta<typeof Button> = {
+  title: "Components/Button",
   component: Button,
+};
+export default meta;
+
+type Story = StoryObj<typeof Button>;
+
+export const Default: Story = {
   args: {
-    label: 'Click Me',
+    label: "Click me",
   },
-} as const;
-
-const Template = (args: any) => <Button {...args} />;
-
-export const Default = Template.bind({});
-Default.args = {
-  label: 'Default Button',
-};
-
-export const CustomLabel = Template.bind({});
-CustomLabel.args = {
-  label: 'Custom Label',
-};
-
-export const ClickedButton = Template.bind({});
-ClickedButton.args = {
-  label: 'Clicked Button',
-};
-ClickedButton.play = async ({ canvasElement }) => {
-  const canvas = within(canvasElement);
-  const button = await canvas.getByText('Clicked Button');
-  userEvent.click(button);
 };
