@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "prepublish": "npm run build",
-    "publish:github": "npm publish",
+    "publish": "npm publish",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "start": "npm run storybook",
