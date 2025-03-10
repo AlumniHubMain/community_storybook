@@ -4,3 +4,10 @@ npm run build
 npm version patch/minor
 npm publish
 ```
+
+TODO
+----
+- [ ] настроить билд пакета
+- [ ] husky
+- [ ] обработчик смены темы
+- [ ] удалить next* expo-*
