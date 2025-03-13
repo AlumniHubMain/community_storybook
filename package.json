@@ -6,7 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build && yarn build-storybook",
-    "lint": "eslint .",
+    "clean:build": "yarn rimraf storybook-static .tamagui",
+    "clean:npm": "yarn rimraf node_modules",
+    "clean:all": "yarn clean:build && yarn rimraf yarn.lock && yarn clean:npm",
+    "lint": "yarn eslint .",
+    "lint:fix": "yarn eslint . --fix || true && yarn prettier . -w",
     "preview": "vite preview",
     "prepublish": "npm run build",
     "publish": "npm publish",
