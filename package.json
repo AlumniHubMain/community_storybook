@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build && yarn build-storybook",
-    "clean:build": "yarn rimraf storybook-static .tamagui",
+    "clean:build": "yarn rimraf storybook-static dist .tamagui",
     "clean:npm": "yarn rimraf node_modules",
     "clean:all": "yarn clean:build && yarn rimraf yarn.lock && yarn clean:npm",
     "lint": "yarn eslint .",
