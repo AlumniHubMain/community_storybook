@@ -1,6 +1,22 @@
+TODO
+----
+- [x] настроить билд пакета
+- [ ] husky
+- [ ] обработчик смены темы
+- [ ] удалить next* expo-*
+
+
+Dev
+===
 ```
-npm login --registry=https://npm.pkg.github.com
-npm run build
-npm version patch/minor
-npm publish
+yarn
+yarn storybook
+```
+
+
+Публикация пакета
+=================
+```
+npm login --scope=@alumnihubmain --registry=https://npm.pkg.github.com
+yarn publish
 ```
